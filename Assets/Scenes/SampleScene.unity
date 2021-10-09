@@ -573,7 +573,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 846408468124862265}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: -0.4378351, z: 0.03862725}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4712175519140919668}
@@ -654,7 +654,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5345440738381390798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 25.5}
+  m_LocalPosition: {x: -0, y: 25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6129240110380109096}
@@ -673,7 +673,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4553568268368118697}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.51368284, z: 0.03862725}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4712175519140919668}
@@ -694,6 +694,7 @@ GameObject:
   - component: {fileID: 5345440738381390800}
   - component: {fileID: 5345440738381390799}
   - component: {fileID: 5345440738381390802}
+  - component: {fileID: 5345440738381390803}
   m_Layer: 0
   m_Name: Canoe
   m_TagString: Untagged
@@ -755,6 +756,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd8cbe06210023143a41f48ab78b2f3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5345440738381390803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5345440738381390798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af4d79aba2dbe947a30a12d57e98ccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  density: 0.2
+  crossSectionalArea: 3
+  areaCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 3.499462
+      outSlope: 3.499462
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.051077407
+    - serializedVersion: 3
+      time: 0.8995115
+      value: 0.9983678
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.99755746
+      value: 0.9575626
+      inSlope: -0.64654106
+      outSlope: -0.64654106
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.4377229
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  height: 0.5
+  length: 2.5
+  sections: 50
 --- !u!23 &5849664057013977627
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -805,7 +856,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2497709303208257049}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.92339945, z: 0.05810045}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4712175519140919668}
@@ -827,7 +878,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6884284301848598396}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: -0.54411745, z: 0.041532215}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4712175519140919668}
@@ -976,7 +1027,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6963849566950224368}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0.03862725}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4712175519140919668}
