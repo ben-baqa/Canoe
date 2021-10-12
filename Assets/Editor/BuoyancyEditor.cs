@@ -19,6 +19,13 @@ public class BuoyancyEditor : Editor
             DrawCrossSection((b.height * i) / b.sections, b.length,
                 b.crossSectionalArea * b.areaCurve.Evaluate(i / (float)b.sections));
         }
+        GUIStyle style = new GUIStyle();
+        style.alignment = TextAnchor.MiddleCenter;
+        style.fontStyle = FontStyle.Bold;
+        style.fontSize = 24;
+        Handles.Label(Vector3.zero + b.transform.up * b.height,
+            "Total Volume: " + b.Volume(), style);
+        Handles.Slider(Vector3.zero, b.transform.up);
     }
 
     private void DrawCrossSection(float height, float length, float area)

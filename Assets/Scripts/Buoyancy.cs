@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//[ExecuteInEditMode]
 // F = - (Object density - fluid density) (gravitational acceleration) (Displaced Volume)
 public class Buoyancy : MonoBehaviour
 {
@@ -37,6 +38,27 @@ public class Buoyancy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        float area = Integrate(height) * crossSectionalArea * crossSectionalArea;
+        //print(area);
+        //print(area * area * Mathf.PI);
+    }
+
+    /// <summary>
+    /// calculate approximate integral of curve up to
+    /// </summary>
+    private float Integrate(float end, int steps = 10)
+    {
+        float step = end / steps;
+        float res = (areaCurve.Evaluate(0) + areaCurve.Evaluate(end)) / 2;
+        for (int i = 0; i < steps; i++)
+        {
+            res += areaCurve.Evaluate(i * step);
+        }
+        return step * res;
+    }
+
+    public float Volume(float depth = 1f)
+    {
+        return Integrate(depth) * crossSectionalArea;
     }
 }
