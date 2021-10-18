@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Gravity force = G(m1 m2) / r^2
 public class GravityWell : MonoBehaviour
 {
     public static List<GravityWell> wells = new List<GravityWell>();
@@ -26,7 +27,9 @@ public class GravityWell : MonoBehaviour
         foreach(GravityWell well in wells)
         {
             diff = well.pos - pos;
-            force += diff.normalized * (mass * well.mass / diff.sqrMagnitude);
+            if (diff.magnitude > 1)
+                force += diff.normalized * mass * well.mass
+                    / diff.sqrMagnitude;
         }
         return force;
     }

@@ -293,13 +293,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.13249297, y: -0.684284, z: 0.1285145, w: 0.70546794}
+  m_LocalPosition: {x: 13.54, y: 32.17, z: -0.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 21.273, y: -88.253, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,7 +445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0642880a2de196d47bdfb12fb54dc93e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 200
+  mass: 2000
   pos: {x: 0, y: 0, z: 0}
   fluidDensity: 1
   radius: 250
@@ -654,7 +654,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5345440738381390798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 25, z: 0}
+  m_LocalPosition: {x: -0, y: 30, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6129240110380109096}
@@ -714,6 +714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d394d50dfd8b65641bf96c2467cb3089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pushForce: 1
 --- !u!54 &5345440738381390800
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -768,7 +769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6af4d79aba2dbe947a30a12d57e98ccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  density: 0.2
+  density: -1
   crossSectionalArea: 3.5
   areaCurve:
     serializedVersion: 2
@@ -804,6 +805,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   height: 0.6
+  waterFriction: 0.15
   length: 2.5
   sections: 50
 --- !u!23 &5849664057013977627
